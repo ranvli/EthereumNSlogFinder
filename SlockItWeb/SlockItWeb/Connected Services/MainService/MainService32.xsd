@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SockitAPI.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SockitAPI.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="SearchParameter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Any" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BlockNumber" type="xs:unsignedLong" />
+      <xs:element minOccurs="0" name="EName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="From" type="xs:unsignedLong" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SearchParameter" nillable="true" type="tns:SearchParameter" />
+  <xs:complexType name="ArrayOfENSHistoryDomain">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ENSHistoryDomain" nillable="true" type="tns:ENSHistoryDomain" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfENSHistoryDomain" nillable="true" type="tns:ArrayOfENSHistoryDomain" />
+  <xs:complexType name="ENSHistoryDomain">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Author" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BlockHash" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BlockNumber" type="xs:unsignedLong" />
+      <xs:element minOccurs="0" name="NumberOfTransactions" type="xs:int" />
+      <xs:element minOccurs="0" name="TimeStamp" type="xs:unsignedLong" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ENSHistoryDomain" nillable="true" type="tns:ENSHistoryDomain" />
+  <xs:complexType name="ArrayOfTransactionDomain">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TransactionDomain" nillable="true" type="tns:TransactionDomain" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTransactionDomain" nillable="true" type="tns:ArrayOfTransactionDomain" />
+  <xs:complexType name="TransactionDomain">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="From" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gas" type="xs:long" />
+      <xs:element minOccurs="0" name="GasPrice" type="xs:long" />
+      <xs:element minOccurs="0" name="Input" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="To" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransactionHash" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransactionIndex" type="xs:long" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TransactionDomain" nillable="true" type="tns:TransactionDomain" />
+</xs:schema>

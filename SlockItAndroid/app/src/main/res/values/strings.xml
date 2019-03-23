@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ENS</string>
+    <string name="field.must.not.be.empty">%s field must not be empty</string>
+    <string name="field.must.not.be.empty.no.place.holder">Field must not be empty</string>
+    <string name="component.must.be.bound">Component must be bound</string>
+    <string name="filter">Filter</string>
+    <string name="start.time.should.not.be.greater">Start time should not be greater than the end time</string>
+    <string name="search">Search</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="filter.by.date.and.time">Filter by date and time</string>
+    <string name="pls.select.the.starting.date">Please select the starting date and time</string>
+    <string name="pls.select.the.end.date">Please select the end date</string>
+    <string name="start.from.the.selected.date.time">Start from selected date and time</string>
+    <string name="the.specified.date.range.is.not.valid">The specified date range is not valid</string>
+    <string name="pls.type.domain">Please type in the domain name</string>
+    <string name="enter.domain.name.here">Enter the domain name here</string>
+    <string name="get.logs">Get logs</string>
+    <string name="find.ens.logs">Find ENS logs</string>
+    <string name="the.domain.name">The domain name</string>
+    <string name="no.logs.found">No logs found</string>
+    <string name="block.hash">Block hash: %s</string>
+    <string name="block.number">Block number: %s</string>
+    <string name="number.of.transactions">Number of transactions: %x</string>
+    <string name="time.stamp">Time stamp: %s</string>
+</resources>

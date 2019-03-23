@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="connect_timeout_seconds">45</integer>
+    <integer name="read_timeout_seconds">45</integer>
+    <integer name="write_timeout_seconds">45</integer>
+
+    <string name="date_format">yyyy-MM-dd hh:mm:ss a</string>
+
+    <string name="date_format_24">yyyy-MM-dd HH:mm:ss</string>
+
+</resources>

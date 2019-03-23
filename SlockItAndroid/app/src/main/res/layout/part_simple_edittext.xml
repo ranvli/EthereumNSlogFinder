@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:padding="@dimen/size_medium"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:id="@+id/domainNameInput"
+                android:inputType="text"
+                android:hint="@string/enter.domain.name.here"
+                android:layout_width="match_parent"
+                android:text="0x6090A6e47849629b7245Dfa1Ca21D94cd15878Ef"
+                android:autofillHints="@string/enter.domain.name.here"
+                android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

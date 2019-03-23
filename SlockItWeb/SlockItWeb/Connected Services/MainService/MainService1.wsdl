@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MainService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://ensapi.intelisoft.cr/MainService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://ensapi.intelisoft.cr/MainService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://ensapi.intelisoft.cr/MainService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SockitAPI.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IENSService_GetHistoryAny_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHistoryAny" />
+  </wsdl:message>
+  <wsdl:message name="IENSService_GetHistoryAny_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHistoryAnyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IENSService_GetHistoryByENAndTimeFrom_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHistoryByENAndTimeFrom" />
+  </wsdl:message>
+  <wsdl:message name="IENSService_GetHistoryByENAndTimeFrom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHistoryByENAndTimeFromResponse" />
+  </wsdl:message>
+  <wsdl:message name="IENSService_GetHistoryByAddressAndTimeFrom_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHistoryByAddressAndTimeFrom" />
+  </wsdl:message>
+  <wsdl:message name="IENSService_GetHistoryByAddressAndTimeFrom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHistoryByAddressAndTimeFromResponse" />
+  </wsdl:message>
+  <wsdl:message name="IENSService_GetTransactionsByBlockNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionsByBlockNumber" />
+  </wsdl:message>
+  <wsdl:message name="IENSService_GetTransactionsByBlockNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionsByBlockNumberResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IENSService">
+    <wsdl:operation name="GetHistoryAny">
+      <wsdl:input wsaw:Action="http://tempuri.org/IENSService/GetHistoryAny" message="tns:IENSService_GetHistoryAny_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IENSService/GetHistoryAnyResponse" message="tns:IENSService_GetHistoryAny_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHistoryByENAndTimeFrom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IENSService/GetHistoryByENAndTimeFrom" message="tns:IENSService_GetHistoryByENAndTimeFrom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IENSService/GetHistoryByENAndTimeFromResponse" message="tns:IENSService_GetHistoryByENAndTimeFrom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHistoryByAddressAndTimeFrom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IENSService/GetHistoryByAddressAndTimeFrom" message="tns:IENSService_GetHistoryByAddressAndTimeFrom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IENSService/GetHistoryByAddressAndTimeFromResponse" message="tns:IENSService_GetHistoryByAddressAndTimeFrom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionsByBlockNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/IENSService/GetTransactionsByBlockNumber" message="tns:IENSService_GetTransactionsByBlockNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IENSService/GetTransactionsByBlockNumberResponse" message="tns:IENSService_GetTransactionsByBlockNumber_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ENSWSDL" type="tns:IENSService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetHistoryAny">
+      <soap:operation soapAction="http://tempuri.org/IENSService/GetHistoryAny" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHistoryByENAndTimeFrom">
+      <soap:operation soapAction="http://tempuri.org/IENSService/GetHistoryByENAndTimeFrom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHistoryByAddressAndTimeFrom">
+      <soap:operation soapAction="http://tempuri.org/IENSService/GetHistoryByAddressAndTimeFrom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionsByBlockNumber">
+      <soap:operation soapAction="http://tempuri.org/IENSService/GetTransactionsByBlockNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MainService">
+    <wsdl:port name="ENSWSDL" binding="tns:ENSWSDL">
+      <soap:address location="http://ensapi.intelisoft.cr/MainService.svc/ENSWSDL" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

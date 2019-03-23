@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Home"  description="Home">
+    <siteMapNode url="~/Default.aspx" title=" Look for activity "  description="Look for activity" ImageUrl="glyphicon glyphicon-home"/>
+    
+  </siteMapNode>
+  
+</siteMap>
