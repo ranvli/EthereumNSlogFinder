@@ -124,6 +124,7 @@
     <Compile Include="Helpers\Util\Constants.cs" />
     <Compile Include="Helpers\Util\DateTimeUtil.cs" />
     <Compile Include="Helpers\Util\EnsUtil.cs" />
+    <Compile Include="Helpers\Util\Interface\IEnsUtil.cs" />
     <Compile Include="MainService.svc.cs">
       <DependentUpon>MainService.svc</DependentUpon>
     </Compile>

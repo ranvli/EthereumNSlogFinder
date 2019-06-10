@@ -66,7 +66,7 @@ namespace SlockItWeb
             }
             else
             {
-                lblStatus.Text = "Login y/o clave incorrectos.";
+                lblStatus.Text = "Login and/or password mismatch.";
             }       
               
         }

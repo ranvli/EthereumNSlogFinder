@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SockitAPI", "SockitAPI\SockitAPI.csproj", "{7BC87D99-1CBF-4226-AB24-5D9A764C7061}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{3653934E-D2FC-49E7-B01C-4095CACE81DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SockitAPI.Tests", "SockitAPI.Tests\SockitAPI.Tests.csproj", "{72F22409-6B5D-48E9-9F75-F7C482DF8D93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{7BC87D99-1CBF-4226-AB24-5D9A764C7061}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BC87D99-1CBF-4226-AB24-5D9A764C7061}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BC87D99-1CBF-4226-AB24-5D9A764C7061}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72F22409-6B5D-48E9-9F75-F7C482DF8D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72F22409-6B5D-48E9-9F75-F7C482DF8D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72F22409-6B5D-48E9-9F75-F7C482DF8D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72F22409-6B5D-48E9-9F75-F7C482DF8D93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{72F22409-6B5D-48E9-9F75-F7C482DF8D93} = {3653934E-D2FC-49E7-B01C-4095CACE81DC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6747A990-7E89-48A7-9A3F-9B6A968ADEA4}

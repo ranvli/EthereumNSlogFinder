@@ -25,7 +25,7 @@
             </div>
              
             <div class="loginbox-submit">
-                <asp:Button runat="server" OnClick="LogIn" Text="Log in" CssClass="btn btn-primary btn-block" />
+                <asp:Button runat="server" ID="btnLogin" OnClick="LogIn" Text="Log in" CssClass="btn btn-primary btn-block" />
 
             </div>
              
